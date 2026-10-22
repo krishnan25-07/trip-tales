@@ -174,8 +174,8 @@
   position: relative;
   display: inline-block;
   color: var(--color-sky-primary);
-  background: linear-gradient(120deg, var(--color-sky-primary), #0ea5e9);
-  -webkit-background-clip: text;
+  background: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

@@ -1,128 +1,125 @@
-<!-- # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Trip Tales ✈️
 
-Currently, two official plugins are available:
+A travel planning application built with **React** and **Vite**. Organize your trips, manage daily activities, and track your travel budget in one place!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <a href="https://trip-tales-planner.netlify.app/">
+    <strong>🌍 Explore the Live Demo</strong>
+  </a>
+</p>
 
-## React Compiler
+## ✨ Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Trip Tales** is a browser-based travel planner that helps users organize trip details, plan daily itineraries, manage activities, and keep track of travel expenses.
 
-## Expanding the Oxlint configuration
+The application includes an interactive activity planner, a trip budget tracker, and drag-and-drop activity reordering. It demonstrates React component design, state management, event handling, browser storage, and responsive web development.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project. -->
+## 🚀 Features
 
+- **Trip management:** Create and manage travel plans.
+- **Daily itineraries:** Organize activities by travel day.
+- **Activity management:** Add, edit, and delete planned activities.
+- **Activity details:** Keep track of activity information, times, notes, and costs.
+- **Trip budget tracker:** Set a budget for a trip.
+- **Expense tracking:** Calculate total activity expenses.
+- **Budget overview:** View the total spent, remaining budget, or overspending status.
+- **Drag-and-drop reordering:** Rearrange activities within the same day.
+- **Persistent trip data:** Save trip information in browser `localStorage`.
+- **Responsive interface:** Use the application on desktop and mobile screens.
 
+## 🛠️ Technologies Used
 
-# ✈️ Trip Tales
+- **React** — Reusable UI components and state management.
+- **Vite** — Development server and production build.
+- **JavaScript (ES modules)** — Application logic and interactions.
+- **HTML5** — Page structure.
+- **CSS3** — Styling and responsive layouts.
+- **Browser APIs** — `localStorage` for client-side data persistence.
+- **Git & GitHub** — Version control and source code hosting.
+- **Netlify** — Application deployment and hosting.
 
-**Plan your journey. Organize your adventures. Keep your travel budget in check.**
+## 🧳 How to Use
 
-Trip Tales is a React-based travel planning application that helps users organize trips, manage daily activities, track expenses, and stay within their travel budget. With an interactive itinerary and drag-and-drop activity ordering, planning a trip becomes easier and more organized.
+1. Open the [Trip Tales live demo](https://trip-tales-planner.netlify.app/).
+2. Create a trip and enter its details.
+3. Organize your itinerary by travel day.
+4. Add activities and enter their relevant details, including costs.
+5. Set a budget to monitor your trip expenses.
+6. Edit or delete activities as your plans change.
+7. Drag and drop activities to rearrange their order within a day.
+8. Refresh the page to check that your saved trip data persists.
 
-## ✨ Features
-
-- 🗺️ **Trip Management** — Create and manage your trips.
-- 📅 **Daily Itinerary** — Organize activities by travel day.
-- ➕ **Activity Management** — Add, edit, and delete activities.
-- 📝 **Activity Details** — Keep track of activity information, notes, times, and costs.
-- 💰 **Budget Tracker** — Set a trip budget and monitor total activity expenses.
-- 📊 **Budget Overview** — View your spending, remaining budget, or overspending status.
-- ↕️ **Drag-and-Drop Reordering** — Rearrange activities within a day.
-- 💾 **Local Data Persistence** — Keep trip details and changes saved in your browser using `localStorage`.
-- 📱 **Responsive Design** — Use the application on desktop and mobile screens.
-
-## 🛠️ Tech Stack
-
-- **React** — Component-based user interface
-- **Vite** — Development server and build tool
-- **JavaScript (ES6+)** — Application logic
-- **HTML5** — Application structure
-- **CSS3** — Styling and responsive layouts
-- **Browser localStorage** — Client-side data persistence
-- **Git & GitHub** — Version control and project hosting
-
-## 🚀 Getting Started
-
-Follow these steps to run Trip Tales locally.
+## 💻 Run Locally
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) installed
-- npm (included with Node.js)
-- Git (optional, for cloning the repository)
+- [Node.js](https://nodejs.org/) (a version compatible with your installed Vite release).
+- npm, which comes with Node.js.
+- Git, to clone the repository.
 
-### Installation
+### Production Build
 
-1. Clone the repository:
-
-   ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd TripTales
-   ```
-
-3. Install the dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open the local URL displayed in your terminal.
-
-## 📦 Production Build
-
-To create a production build, run:
+Create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-To preview the production build locally, run:
+Preview the production build locally:
 
 ```bash
 npm run preview
 ```
 
-## 💡 What I Learned
+### Code Quality
 
-Building Trip Tales helped me practice:
+Run the linter:
 
-- Creating reusable React components.
-- Managing application data with React state and props.
-- Handling forms and user interactions.
-- Updating arrays and objects without directly mutating state.
-- Saving and retrieving data with `localStorage`.
-- Implementing native HTML drag-and-drop interactions.
-- Calculating expenses and displaying budget summaries.
-- Designing responsive layouts with CSS.
-- Building and testing a React application with Vite.
+```bash
+npm run lint
+```
 
-## 🔮 Future Improvements
+*Note: The lint command works if it is configured in `package.json`.*
+
+## 📁 Project Structure
+
+```text
+trip-tales/
+├── public/
+│   |─ favicon.svg
+├── src/
+│   ├── components/
+│   │   └── TripDetails.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── .gitignore
+└── README.md
+```
+
+## 🔗 Links
+
+- **Live Demo:** [https://trip-tales-planner.netlify.app/](https://trip-tales-planner.netlify.app/)
+- **GitHub Repository:** [https://github.com/krishnan25-07/trip-tales](https://github.com/krishnan25-07/trip-tales)
+
+## 🌱 Future Improvements
 
 - Move activities between different travel days using drag-and-drop.
 - Add expense breakdowns by category.
-- Add trip export and sharing options.
+- Export trip itineraries and expenses as PDF files.
 - Introduce cloud storage and user accounts.
+- Add trip-sharing functionality.
 
 ## 👩‍💻 Author
 
-**Archana Krishna**
-
-A front-end developer in progress, learning by building practical projects with React and modern web technologies.
+Created by **Archana Krishna** as a front-end development project to practise React, JavaScript, state management, data persistence, and responsive UI development.
 
 ---
 
+If you enjoy the project, consider giving the repository a ⭐ on GitHub!
