@@ -1,0 +1,109 @@
+/* ==========================================================================
+   TripTales — Interactive Trip Planner
+   Global Design System & Styles
+   ========================================================================== */
+
+:root {
+  /* Color Palette: Warm Cream, Sky Blue & Subtle Coral Accent */
+  --color-cream-bg: #FAF7F2;          /* Main soft cream background */
+  --color-cream-surface: #FFFFFF;     /* Clean card surface */
+  --color-cream-subtle: #F6EFE8;      /* Cream tinted container/pill */
+  --color-cream-border: #E8DED1;      /* Soft warm border */
+
+  --color-sky-primary: #0284C7;       /* Fresh sky blue primary */
+  --color-sky-hover: #0369A1;         /* Deep sky blue on hover */
+  --color-sky-light: #E0F2FE;         /* Soft sky blue pill/badge */
+  --color-sky-tint: #F0F9FF;          /* Very subtle sky blue glow */
+  --color-sky-border: #BAE6FD;        /* Soft blue outline */
+
+  --color-coral-primary: #FF6B57;     /* Elegant coral accent */
+  --color-coral-hover: #F05540;       /* Coral hover state */
+  --color-coral-soft: #FFF1EE;        /* Soft coral background tint */
+  --color-coral-border: #FFD2C9;      /* Coral outline */
+  --color-coral-shadow: rgba(255, 107, 87, 0.28); /* Coral button glow */
+
+  /* Neutral Slate Text */
+  --color-text-title: #131E2E;        /* Deep midnight slate for headings */
+  --color-text-body: #475569;         /* Slate body text */
+  --color-text-muted: #64748B;        /* Secondary muted text */
+  --color-text-subtle: #94A3B8;       /* Subtle timestamps and icons */
+
+  /* Typography */
+  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(30, 41, 59, 0.05), 0 1px 2px rgba(30, 41, 59, 0.03);
+  --shadow-md: 0 4px 16px -2px rgba(30, 41, 59, 0.06), 0 2px 6px -1px rgba(30, 41, 59, 0.04);
+  --shadow-lg: 0 12px 32px -4px rgba(30, 41, 59, 0.08), 0 4px 12px -2px rgba(30, 41, 59, 0.04);
+  --shadow-card-hover: 0 18px 36px -6px rgba(19, 30, 46, 0.1), 0 8px 16px -4px rgba(2, 132, 199, 0.08);
+
+  /* Border Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-main);
+  background-color: var(--color-cream-bg);
+  color: var(--color-text-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-cream-bg);
+  /* Gentle ambient background texture with sky blue and warm cream glow */
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(224, 242, 254, 0.75) 0%, transparent 45%),
+    radial-gradient(circle at 82% 16%, rgba(255, 241, 238, 0.65) 0%, transparent 40%),
+    radial-gradient(circle at 50% 60%, rgba(246, 239, 232, 0.45) 0%, transparent 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Global Typography & Utility Helpers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-title);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
